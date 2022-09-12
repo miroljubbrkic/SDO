@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/drawable/ic_back.xml" value="0.188" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.3095" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/drawable/ic_todos.xml" value="0.132" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/drawable/rounded_almond.xml" value="0.124" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/drawable/rounded_edittext.xml" value="0.124" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/drawable/rounded_navy.xml" value="0.124" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_note_add.xml" value="0.27447916666666666" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_note_edit.xml" value="0.37907608695652173" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_todo_add.xml" value="0.27447916666666666" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_todo_edit.xml" value="0.44895833333333335" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_todos.xml" value="0.264" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/layout/note_layout.xml" value="0.20052083333333334" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/layout/styles.xml" value="0.33152173913043476" />
+        <entry key="..\:/FAX/rma/SingiDingiOffice/app/src/main/res/layout/todo_layout.xml" value="0.28874172185430463" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.4835" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_main.xml" value="0.575" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_note_add.xml" value="0.575" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_note_edit.xml" value="0.575" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_notes.xml" value="0.575" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_todo_add.xml" value="0.575" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_todo_edit.xml" value="0.25" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/layout/activity_todos.xml" value="0.575" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/layout/note_layout.xml" value="0.575" />
+        <entry key="..\:/ROOT/FAX/rma/SingiDingiOffice/app/src/main/res/layout/todo_layout.xml" value="0.575" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
