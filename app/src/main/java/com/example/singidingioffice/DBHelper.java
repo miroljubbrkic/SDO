@@ -17,7 +17,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase DB) {
         DB.execSQL("create Table UserNotes(id TEXT primary key, title TEXT, content TEXT)");
-        DB.execSQL("create Table UserTodos(id TEXT primary key, contetnt TEXT, checked TEXT, importance_level INTEGER)");
+        DB.execSQL("create Table UserTodos(id TEXT primary key, content TEXT, checked TEXT, importance_level INTEGER)");
     }
 
     @Override
@@ -46,11 +46,11 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
-    public Boolean insertTodo(String id, String contetnt, Boolean checked, int importance_level) {
+    public Boolean insertTodo(String id, String content, Boolean checked, int importance_level) {
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("id", id);
-        contentValues.put("contetnt", contetnt);
+        contentValues.put("content", content);
         contentValues.put("checked", checked);
         contentValues.put("importance_level", importance_level);
 
@@ -85,10 +85,10 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
-    public Boolean updateTodo(String id, String contetnt, Boolean checked, int importance_level) {
+    public Boolean updateTodo(String id, String content, Boolean checked, int importance_level) {
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put("contetnt", contetnt);
+        contentValues.put("content", content);
         contentValues.put("checked", checked);
         contentValues.put("importance_level", importance_level);
         Cursor cursor = DB.rawQuery("Select * from UserTodos where id = ?", new String[] {id});
@@ -172,20 +172,21 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public LinkedList<Todo> getTodos() {
         SQLiteDatabase DB = this.getWritableDatabase();
-        Cursor cursor = DB.rawQuery("Select * from UserTodos", null);
+//        Cursor cursor = DB.rawQuery("Select * from UserTodos", null);
+        Cursor cursor = DB.rawQuery("SELECT * FROM UserTodos ORDER BY importance_level, content ASC;" , null);
         LinkedList<Todo> todos = new LinkedList<>();
 
         int iId = cursor.getColumnIndex("id");
-        int iContetnt = cursor.getColumnIndex("contetnt");
+        int iContent = cursor.getColumnIndex("content");
         int iChecked = cursor.getColumnIndex("checked");
         int iImportance_level = cursor.getColumnIndex("importance_level");
 
         for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
             String id = cursor.getString(iId);
-            String contetnt = cursor.getString(iContetnt);
+            String content = cursor.getString(iContent);
             Boolean checked = getBoolean(iChecked, cursor);
             Integer importance_level = cursor.getInt(iImportance_level);
-            Todo temp = new Todo(id, contetnt, checked, importance_level);
+            Todo temp = new Todo(id, content, checked, importance_level);
 
             todos.add(temp);
         }
