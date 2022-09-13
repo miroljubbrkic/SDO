@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.DBHelper.DBHelper;
+
 public class NoteEditActivity extends AppCompatActivity {
 
     String id;

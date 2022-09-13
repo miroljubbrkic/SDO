@@ -1,10 +1,13 @@
-package com.example.singidingioffice;
+package com.example.DBHelper;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.example.model.Note;
+import com.example.model.Todo;
 
 import java.util.LinkedList;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.example.singidingioffice;
+package com.example.model;
 
 public class Note {
     private String id, title, contetn;

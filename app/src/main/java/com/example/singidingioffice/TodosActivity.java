@@ -19,6 +19,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.DBHelper.DBHelper;
+import com.example.model.Todo;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
