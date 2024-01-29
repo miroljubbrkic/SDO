@@ -1,6 +1,7 @@
 # SDO - Android to-do and notes managing app in.
 ---
 Simple todo and note managing app in Java.
+
 Technologies: Java, SQLite
 
 This project was created as a university project in java. 
